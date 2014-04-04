@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    clear-rb (0.0.1)
+    clr (0.0.1)
       gli (= 2.9.0)
 
 GEM
@@ -41,7 +41,7 @@ PLATFORMS
 
 DEPENDENCIES
   aruba
-  clear-rb!
+  clr!
   colored
   rake
   rdoc

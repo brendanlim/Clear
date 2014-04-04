@@ -1,3 +1,3 @@
-= Clear-rb
+= clr
 
 Command line interface for the Clear to do list app

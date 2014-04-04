@@ -1,12 +1,10 @@
-require 'clear-rb/version.rb'
-require 'clear-rb/database.rb'
-require 'clear-rb/task.rb'
-require 'clear-rb/list.rb'
+require 'clr/version.rb'
+require 'clr/database.rb'
+require 'clr/task.rb'
+require 'clr/list.rb'
 require 'colored'
 
-# Add requires for other files you add to your project here, so
-# you just need to require this one file in your bin file
-class Clearrb
+class Clr
   def initialize
     @@db = nil
     @@lists = []

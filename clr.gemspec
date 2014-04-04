@@ -1,7 +1,7 @@
-require File.join([File.dirname(__FILE__),'lib','clear-rb','version.rb'])
+require File.join([File.dirname(__FILE__),'lib','clr','version.rb'])
 spec = Gem::Specification.new do |s|
-  s.name = 'clear-rb'
-  s.version = ClearRb::VERSION
+  s.name = 'clr'
+  s.version = Clr::VERSION
   s.author = 'Brendan G. Lim'
   s.email = 'brendangl@gmail.com'
   s.homepage = 'http://brendanlim.com'
@@ -11,10 +11,10 @@ spec = Gem::Specification.new do |s|
 ")
   s.require_paths << 'lib'
   s.has_rdoc = true
-  s.extra_rdoc_files = ['README.rdoc','clear-rb.rdoc']
-  s.rdoc_options << '--title' << 'clear-rb' << '--main' << 'README.rdoc' << '-ri'
+  s.extra_rdoc_files = ['README.rdoc']
+  s.rdoc_options << '--title' << 'clr' << '--main' << 'README.rdoc' << '-ri'
   s.bindir = 'bin'
-  s.executables << 'clear-rb'
+  s.executables << 'clr'
   s.add_development_dependency('rake')
   s.add_development_dependency('rdoc')
   s.add_development_dependency('aruba')

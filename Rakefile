@@ -10,7 +10,7 @@ Rake::RDocTask.new do |rd|
   rd.title = 'Your application title'
 end
 
-spec = eval(File.read('clear-rb.gemspec'))
+spec = eval(File.read('clr.gemspec'))
 
 Gem::PackageTask.new(spec) do |pkg|
 end
