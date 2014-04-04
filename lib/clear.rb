@@ -1,10 +1,10 @@
-require 'clr/version.rb'
-require 'clr/database.rb'
-require 'clr/task.rb'
-require 'clr/list.rb'
+require 'clear/version.rb'
+require 'clear/database.rb'
+require 'clear/task.rb'
+require 'clear/list.rb'
 require 'colored'
 
-class Clr
+class Clear
   def initialize
     @@db = nil
     @@lists = []

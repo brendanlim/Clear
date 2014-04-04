@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 require 'gli'
-require 'clr'
+require 'clear'
 include GLI::App
 
 program_desc 'Command line interface for Clear to do list by Brendan G. Lim'
 
-version Clr::VERSION
+version ClearMod::VERSION
 
 desc 'List all tasks for each list. Will not show empty lists'
 command :list, :ls do |c|
@@ -15,7 +15,7 @@ command :list, :ls do |c|
 end
 
 pre do |global,command,options,args|
-  $clear = Clr.new
+  $clear = Clear.new
   true
 end
 
