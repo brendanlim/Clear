@@ -1,10 +1,10 @@
-# clr
+# Clear
 
 Command line interface for the Clear to do list app
 
-    sudo gem install clr
+    sudo gem install clear
 
-List all to dos in Clear 
+List all to dos in Clear within your terminal
 
     clr list
 
