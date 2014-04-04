@@ -1,14 +1,24 @@
 # Clear
 
-Command line interface for the Clear to do list app
+#### Command line interface for the Clear to do list app. 
+
+## Installation
 
     sudo gem install clear
 
-List all to dos in Clear within your terminal
+It also depends on the sqlite3 gem. If you don't have this, install it first.
+
+    sudo gem install sqlite3
+
+## Usage
+
+(list, ls) - List all to dos and the lists that they belong to, from Clear, within your terminal.
 
     clr list
 
-![Screenshot](http://i.imgur.com/jsxzGXf.png)
+More coming...
+
+![Screenshot](http://i.imgur.com/HzQrarw.png)
 
 
 ## Todo
