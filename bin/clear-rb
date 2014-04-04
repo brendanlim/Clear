@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+require 'gli'
+require 'clear-rb'
+include GLI::App
+
+program_desc 'Command line interface for Clear to do list by Brendan G. Lim'
+
+version ClearRb::VERSION
+
+desc 'List all tasks for each list. Will not show empty lists'
+command :list, :ls do |c|
+  c.action do |global_options,options,args|
+    $clear.list_tasks
+  end
+end
+
+pre do |global,command,options,args|
+  $clear = Clearrb.new
+  true
+end
+
+post do |global,command,options,args|
+  $clear.db.connection.close unless $clear.db.connection.nil?
+end
+
+on_error do |exception|
+  true
+end
+
+exit run(ARGV)
